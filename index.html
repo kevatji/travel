@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KevatJi  Travel Agency has been providing clients with the best travel guides, travel information, and vacation packages for more than a decade. We specialize in travel packages to Europe, Asia, Africa, South America, and the Caribbean. Our guides and services are second to none."
+    />
+    <meta
+      name="keywords"
+      content="travel agency, travel, travel guides, travel information, vacation packages, travel packages, Europe, Asia, Africa, South America, Caribbean"
+    />
+    <meta name="author" content="Stefan Gogov" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>KevatJi  — Best Travel Agency</title>
+
+    <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <a href="./index.html">
+        <img
+              class="footer-logo" src="img/sumit.png" alt="logo" style="width: 45%; height: auto; padding-top: 15px;"/>
+        <!-- <h2 class="heading-primary hero-heading">KevatJi Travels</h2> -->
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#activities">Activities</a></li>
+          <li><a class="main-nav-link" href="#locations">Locations</a></li>
+          <li><a class="main-nav-link" href="#categories">Categories</a></li>
+          <li><a class="main-nav-link" href="#blogs">Blog</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#team">Team</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+    <!-- ================= MAIN ================= -->
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="section-hero">
+        <div class="hero-slider">
+          <div class="hero-slide hero-slide--1">
+            <span class="subheading">Featured Activity</span>
+            <h1 class="heading-primary hero-heading">Indore Private Tour</h1>
+            <p class="hero-description">
+              This tour will take you to some of the most iconic landmarks in
+              Indore, such as the Ancient Theatre, the Ethnographic Museum, and
+              the Roman Stadium.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--2">
+            <span class="subheading">Best Activity</span>
+            <h1 class="heading-primary hero-heading">Rome City Tour</h1>
+            <p class="hero-description">
+              This tour is led by a private guide. It includes visits to iconic
+              landmarks and attractions such as the Colosseum, Pantheon, Trevi
+              Fountain, and Spanish Steps.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--3">
+            <span class="subheading">New Activity</span>
+            <h1 class="heading-primary hero-heading">Amsterdam Canal Cruise</h1>
+            <p class="hero-description">
+              A boat tour through the canals of Amsterdam, offering a unique
+              perspective of the city. The cruise includes live commentary,
+              providing information about the sights and history of Amsterdam.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <button class="slider__btn hero-slider__btn--left">
+            <span>&larr;</span>
+          </button>
+          <button class="slider__btn hero-slider__btn--right">
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <!-- ================= SEARCH FORM ================= -->
+        <div class="search-form-container">
+          <form action="#" class="form search-form" method="post">
+            <div class="search-form__elements">
+              <input
+                type="search"
+                name="location"
+                placeholder="Where are you going?"
+                required
+              />
+              <select name="activities" id="select-activity" required>
+                <option value="">Activity Type:</option>
+                <option value="sightseeing">Sightseeing</option>
+                <option value="adventure">Adventure</option>
+                <option value="cultural">Cultural</option>
+                <option value="food">Food</option>
+                <option value="day trip">Day Trip</option>
+                <option value="nightlife">Nightlife</option>
+                <option value="private tour">Private Tour</option>
+              </select>
+
+              <select
+                name="select-destination"
+                id="select-destination"
+                required
+              >
+                <option value="">Destination:</option>
+                <option value="plovdiv">Plovdiv</option>
+                <option value="london">London</option>
+                <option value="paris">Paris</option>
+                <option value="new york">New York</option>
+                <option value="dubai">Dubai</option>
+                <option value="istanbul">Istanbul</option>
+                <option value="rome">Rome</option>
+              </select>
+
+              <select name="select-duration" id="select-duration" required>
+                <option value="">Duration:</option>
+                <option value="short">0-3 hours</option>
+                <option value="medium">3-5 hours</option>
+                <option value="long">5-7 hours</option>
+                <option value="full day">Full day</option>
+              </select>
+            </div>
+            <button class="btn btn--full" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= ACTIVITIES ================= -->
+      <section class="section-activities" id="activities">
+        <div class="container">
+          <span class="subheading center-text">Best Activities</span>
+          <h2 class="heading-secondary center-text">
+            Browse Featured Activities
+          </h2>
+
+          <div class="activities-container grid grid--4-cols">
+            <div class="activity">
+              <figure class="activity-img">
+                <img
+                  src="img/activities/Istanbul.jpg"
+                  alt="Istanbul Food Tour"
+                />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">$390</span>
+                  <span class="price-value">$190</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Istanbul Food Tour</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>4</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Istanbul, Turkey</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (344)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/activities/Venice.jpg" alt="Venice Boat Tour" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">$370</span>
+                  <span class="price-value">$270</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Venice Boat Tour</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>3</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Venice, Italy</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-5</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.9/5</strong> rating (467)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/activities/Vatican-City.jpg" alt="Vatican City" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">$350</span>
+                  <span class="price-value">$220</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Vatican Guided Tour</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>5</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Vatican City</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-20</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.7/5</strong> rating (289)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/activities/Louvre.jpg" alt="Louvre museum" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">$290</span>
+                  <span class="price-value">$90</span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Louvre Museum Ticket</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>2</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Paris, France</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (223)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOCATIONS ================= -->
+      <section class="section-locations" id="locations">
+        <div class="container">
+          <span class="subheading">Locations</span>
+          <h2 class="heading-secondary heading-locations">
+            Wouldn't you like to be in the best locations in the world?
+          </h2>
+
+          <div class="swiper">
+            <div class="locations-content">
+              <div class="locations-container swiper-wrapper">
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img//locations/location-1.jpg" alt="Paris" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Paris</a>
+                      <span class="location-price">$199</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 29 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-2.jpg" alt="Venice" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Venice</a>
+                      <span class="location-price">$229</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 1 Mar 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-3.jpg" alt="Rome" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Rome</a>
+                      <span class="location-price">$259</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 5 Feb 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-4.jpg" alt="Amsterdam" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Amsterdam</a>
+                      <span class="location-price">$189</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 31 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-5.jpg" alt="Istanbul" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Istanbul</a>
+                      <span class="location-price">$249</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 14 Apr 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-6.jpg" alt="Plovdiv" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Plovdiv</a>
+                      <span class="location-price">$149</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 6 May 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-7.jpg" alt="London" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">London</a>
+                      <span class="location-price">$299</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 15 Jan 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-8.jpg" alt="Madrid" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Madrid</a>
+                      <span class="location-price">$219</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 1 Feb 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/locations/location-9.jpg" alt="Dubai" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Dubai</a>
+                      <span class="location-price">$299</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 31 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev locations-btn-prev"></div>
+            <div class="swiper-button-next locations-btn-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CATEGORIES ================= -->
+      <section class="section-categories" id="categories">
+        <div class="container">
+          <span class="subheading center-text">Categories</span>
+          <h2 class="heading-secondary center-text">Browse By Category</h2>
+
+          <div class="categories-container">
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/attraction.svg"
+                  alt="attraction icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Attraction</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/caravan.svg"
+                  alt="caravan icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Caravan</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/diving.svg"
+                  alt="diving icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Diving</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/cruise.svg"
+                  alt="cruise icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Cruise</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/city-travel.svg"
+                  alt="city travel icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">City Travel</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/food-drinks.svg"
+                  alt="food and drinks icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Food & Drinks</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/beach.svg"
+                  alt="beach icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Beach</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/camping.svg"
+                  alt="camping icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Camping</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BLOGS ================= -->
+      <section class="section-blogs" id="blogs">
+        <div class="container">
+          <span class="subheading">Latest News</span>
+          <h2 class="heading-secondary heading-blogs">
+            If you are interested in travel business, check out our articles
+          </h2>
+
+          <div class="blogs-container">
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/blogs/Venice.jpg" alt="Venice" />
+
+                <div class="date">
+                  <span class="date-day">20</span>
+                  <span class="date-month-year">Jan/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--attractions">Attractions</span>
+                </div>
+                <a class="blog-heading" href="#">
+                  What makes Venice of the most visited places in Italy
+                </a>
+                <p class="blog-text">
+                  Venice is one of the most visited places in Italy. It is a
+                  beautiful city with a lot of history and culture. It is also
+                  known for its canals and bridges...
+                </p>
+                <a class="blog-link" href="#">Read more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/blogs/Plovdiv.jpg" alt="Indore" />
+
+                <div class="date">
+                  <span class="date-day">15</span>
+                  <span class="date-month-year">Jan/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--experience">experiences</span>
+                </div>
+                <a class="blog-heading" href="#">
+                  5 different experiences you may have in Indore
+                </a>
+                <p class="blog-text">
+                  Indore is an ancient city built around 7 hills, in southern
+                  Bulgaria. It is also the oldest city in Europe. It is known
+                  for its architecture and culture...
+                </p>
+                <a class="blog-link" href="#">Read more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/blogs/Florence.jpg" alt="Florence" />
+
+                <div class="date">
+                  <span class="date-day">7</span>
+                  <span class="date-month-year">Feb/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--places">places</span>
+                </div>
+                <a class="blog-heading" href="#">
+                  12 amazing places to visit and see in Florence.
+                </a>
+                <p class="blog-text">
+                  Florence, capital of Italy’s Tuscany region, is home to many
+                  masterpieces of Renaissance art and architecture. One of its
+                  most iconic sights...
+                </p>
+                <a class="blog-link" href="#">Read more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="container">
+          <span class="subheading center-text">Testimonials</span>
+          <h2 class="heading-secondary center-text">
+            What our clients say about us
+          </h2>
+
+          <div class="testimonials-slider">
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-1.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Ivelin Manev</h4>
+                <span class="testimonial-location">Indore, MP</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Excellent service!</h3>
+                <blockquote class="testimonial-text">
+                  I recently used KevatJi  Travel Agency for a trip to Europe and
+                  I was blown away by the level of service and attention to the
+                  detail I received. From the moment I started planning my trip,
+                  the team at KevatJi  was incredibly helpful and responsive,
+                  answering all of my questions and offering personalized
+                  recommendations based on my interests.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-2.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Milena Jordanova</h4>
+                <span class="testimonial-location">Noid, UP</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Trustworthy agency!</h3>
+                <blockquote class="testimonial-text">
+                  I have been using KevatJi  for all of my travel needs for the
+                  past few years and I have always been extremely satisfied with
+                  the level of service I receive. The team at KevatJi  is
+                  reliable, efficient, and always goes above and beyond to
+                  ensure that my travels are smooth and stress-free. I know that
+                  I can rely on them for all of my travel needs.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-3.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Michael Ross</h4>
+                <span class="testimonial-location">Betul, UK</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Amazing experience!</h3>
+                <blockquote class="testimonial-text">
+                  I recently traveled to Istanbul with KevatJi  and had an
+                  absolutely amazing experience. From the moment I booked my
+                  trip, the team at KevatJi  was incredibly helpful and attentive.
+                  Once I arrived in Istanbul, everything was taken care of for
+                  me - the accommodation was top-notch and the activities and
+                  tours were all well-organized and enjoyable.
+                </blockquote>
+              </div>
+            </div>
+            <div class="testimonial-btns">
+              <button class="testimonial-slider__btn testimonial__btn--left">
+                <span>&larr;</span>
+              </button>
+              <button class="testimonial-slider__btn testimonial__btn--right">
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TEAM ================= -->
+      <section class="section-team" id="team">
+        <div class="container">
+          <span class="subheading">Our team</span>
+          <h2 class="heading-secondary heading-team">
+            Meet Our Professional Team To Guide You Best
+          </h2>
+
+          <div class="team-container">
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-1.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Petar Ivanov</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">38 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-2.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Luke Castro</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">67 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-3.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Emre Ali</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">27 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-4.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Christine Beck</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">56 Activities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CALL-TO-ACTION FORM ================= -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <span class="subheading center-text">Contact us</span>
+          <h2 class="heading-secondary center-text">
+            Ready to book your next trip?
+          </h2>
+
+          <div class="cta">
+            <div>
+              <h3 class="heading-tertiary cta-heading">
+                Get an appointment at our office!
+              </h3>
+              <p class="cta-text">
+                Book your next adventure with our expert team in our office. We
+                are open 7 days a week from 09 AM to 09 PM. You can also contact
+                us by phone or email.
+              </p>
+            </div>
+
+            <form action="#" class="form cta-form" method="post">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Ivan Ivanov"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  pattern="[0]{1}[8-9]{1}[0-9]{8}"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input id="date" type="date" required />
+              </div>
+              <div>
+                <label for="time">Time</label>
+                <input id="time" type="time" min="10:00" max="18:00" required />
+              </div>
+              <div>
+                <label for="select-people">How many people?</label>
+                <select id="select-people" required>
+                  <option value="">Please, choose one option:</option>
+                  <option value="small">1-3</option>
+                  <option value="medium">4-6</option>
+                  <option value="large">7-10</option>
+                  <option value="extra">10+</option>
+                </select>
+              </div>
+              <div class="cta-message">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--full" type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-col-1">
+          <a href="#"
+            ><img
+              class="footer-logo"
+              src="img/sumit.png"
+              alt="logo"
+          /></a>
+          <div class="social-media-logos">
+            <a href="#">
+              <ion-icon
+                class="social-media-logo"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-twitter"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-youtube"
+              ></ion-icon
+            ></a>
+          </div>
+
+          <ul class="footer-imgs">
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/footer/footer-img-1.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/footer/footer-img-2.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/footer/footer-img-3.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">About us</a></li>
+            <li><a class="footer-link" href="#locations">Destinations</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Tours</a></li>
+            <li><a class="footer-link" href="#cta">Contact</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+            <li><a class="footer-link" href="#blogs">Blog</a></li>
+          </ul>
+
+          <h4 class="footer-heading">Popular Search</h4>
+          <div class="search-items">
+            <a class="search-item" href="#">Tours</a>
+            <a class="search-item" href="#">Hotels</a>
+            <a class="search-item" href="#">Car Rentals</a>
+            <a class="search-item" href="#">Cruises</a>
+            <a class="search-item" href="#">Vacations</a>
+          </div>
+        </div>
+
+        <div class="footer-col-3">
+          <h4 class="footer-heading">Blog and News</h4>
+          <div class="footer-blogs">
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-1.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading">
+                How to travel safely around the world
+              </a>
+              <span class="footer-blog-date">May 20, 2023</span>
+            </div>
+
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-2.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading">
+                How to become the best tour guide
+              </a>
+              <span class="footer-blog-date">Feb 17, 2023</span>
+            </div>
+
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-3.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading"
+                >Wandering around Venice</a
+              >
+              <span class="footer-blog-date">Mar 24, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col-4">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="pin"></ion-icon>
+              </figure>
+
+              <span class="footer-detail">GopalGanj, Sagar [M.P.]</span>
+              <span class="footer-detail-text">Meet us in the office</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <a href="tel:9111987258"><ion-icon class="footer-icon" name="call"></ion-icon>
+              </figure>
+              <span class="footer-detail">+91 911-198-7258</a></span>
+              <span class="footer-detail-text">Make a call</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+               <a href="mailto:info@kevatji.com"><ion-icon class="footer-icon" name="mail"></ion-icon>
+              </figure>
+              info@KevatJi .com</a
+              >
+              <span class="footer-detail-text">Send us an email</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="clock"></ion-icon>
+              </figure>
+              <span class="footer-detail">09 AM - 09 PM (Sun - Sun)</span>
+              <span class="footer-detail-text">Opening hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer-text" style="text-align: center; padding-bottom:25px;">
+        Copyright ©
+        <span class="year"></span> All Maintained By
+        <a href="https://instagram.com/olaska_js"><span style="color: red; animation: blink 1s infinite;">&#10084;
+          <style>
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            </style></span><b>JS</b></a>.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  </body>
+</html>
