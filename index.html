@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The official Madhya Pradesh Tourism website, which offers details on travel destinations, lodging options, local customs and traditions, and itinerary ideas."
+    />
+    <meta
+      name="keywords"
+      content="tourist places in madhya pradesh, places to visit in madhya pradesh, Madhya Pradesh travel and tourism,travel destinations in india"
+    />
+    <meta name="author" content="jitendralodhi" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <title>KevatJi  — Best Travel Agency</title>
+
+    <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+
+    <!-- ================= LOADER ================= -->
+    <style>
+      .loader{
+        background-color: #fff;
+        width: 270px;
+        margin: 0px auto 0;
+        padding: 17px 15px 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      }
+      .loader ul{ 
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .loader ul li{
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-block;
+        animation: grow 1.6s ease-in-out infinite;
+      }
+      .loader ul li:nth-child(1){
+        background: #ffff00;
+        box-shadow: 0 0 40px #ffff00;
+        animation-delay: -1.4s;
+      }
+      .loader ul li:nth-child(2){
+        background: #76ff03;
+        box-shadow: 0 0 40px #76ff03;
+        animation-delay: -1.2s;
+      }
+      .loader ul li:nth-child(3){
+        background: #f06292;
+        box-shadow: 0 0 40px #f06292;
+        animation-delay: -1s;
+      }
+      .loader ul li:nth-child(4){
+        background: #4fc3f7;
+        box-shadow: 0 0 40px #4fc3f7;
+        animation-delay: -0.8s;
+      }
+      .loader ul li:nth-child(5){
+        background: #ba68c8;
+        box-shadow: 0 0 40px #ba68c8;
+        animation-delay: -0.6s;
+      }
+      .loader ul li:nth-child(6){
+        background: #f57300;
+        box-shadow: 0 0 40px #f57300;
+        animation-delay: -0.4s;
+      }
+      .loader ul li:nth-child(7){
+        background: #673ab7;
+        box-shadow: 0 0 40px #673ab7;
+        animation-delay: -0.2s;
+      }
+      @keyframes grow{
+        0%, 40%, 100%{ transform: scale(0.2); }
+        20%{ transform: scale(1); }
+      }
+      .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; /* White background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999; /* Ensure the preloader is on top */
+    }
+    </style>
+    </head>
+    <body>
+    <!-- Loader -->
+ 
+    <div class="loader" id="loader">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  
+    <script>
+      // JavaScript to hide the preloader and display the main content after a certain time or when the content is fully loaded
+      window.addEventListener('load', function() {
+        var preloader = document.getElementById('loader');
+        var mainContent = document.getElementById('main-content');
+  
+        // Hide the preloader after 3 seconds (adjust as needed)
+        setTimeout(function() {
+          preloader.style.display = 'none';
+          mainContent.style.display = 'block'; // Display the main content
+        }, 1400); // Hide after 2.5 seconds
+      });
+    </script>
+    
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+      <a href="./index.html">
+        <img
+              class="footer-logo" src="img/sumit.png" alt="logo" style="width: 45%; height: auto; padding-top: 15px;"/>
+        <!-- <h2 class="heading-primary hero-heading">KevatJi Travels</h2> -->
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#activities">Activities</a></li>
+          <li><a class="main-nav-link" href="#locations">Locations</a></li>
+          <li><a class="main-nav-link" href="#categories">Categories</a></li>
+          <li><a class="main-nav-link" href="#blogs">Blog</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#team">Team</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+      </button>
+    </header>
+    <!-- ================= MAIN ================= -->
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="section-hero">
+        <div class="hero-slider">
+          <div class="hero-slide hero-slide--1">
+            <span class="subheading">Featured Activity</span>
+            <h1 class="heading-primary hero-heading">Indore City Tour</h1>
+            <p class="hero-description">
+              Explore vibrant Indore, Madhya Pradesh, India: rich culture, delicious food, historic landmarks, and unforgettable experiences await your journey.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--2">
+            <span class="subheading">Best Activity</span>
+            <h1 class="heading-primary hero-heading">Shree Mahakaleswar Darshan</h1>
+            <p class="hero-description">
+              Mahakaleshwar: Divine spirituality, ancient rituals, and the sacred aura create an immersive experience at this revered temple in Ujjain.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <div class="hero-slide hero-slide--3">
+            <span class="subheading">New Activity</span>
+            <h1 class="heading-primary hero-heading">Omkareshwar Darshan</h1>
+            <p class="hero-description">
+              Omkareshwar- Sacred pilgrimage site, serene Narmada River, and spiritual ambiance beckon travelers to this divine destination in Madhya Pradesh.
+            </p>
+            <div class="hero-btns">
+              <a class="btn btn--outline margin-right-sm" href="#activities"
+                >Browse Activity</a
+              >
+              <a class="btn btn--full" href="#cta">Book Now</a>
+            </div>
+          </div>
+
+          <button class="slider__btn hero-slider__btn--left">
+            <span>&larr;</span>
+          </button>
+          <button class="slider__btn hero-slider__btn--right">
+            <span>&rarr;</span>
+          </button>
+        </div>
+
+        <!-- ================= SEARCH FORM ================= -->
+        <div class="search-form-container">
+          <form action="#" class="form search-form" method="post">
+            <div class="search-form__elements">
+              <input
+                type="search"
+                name="location"
+                placeholder="Where are you going?"
+                required
+              />
+              <select name="activities" id="select-activity" required>
+                <option value="">Activity Type:</option>
+                <option value="sightseeing">Sightseeing</option>
+                <option value="adventure">Adventure</option>
+                <option value="cultural">Cultural</option>
+                <option value="food">Food</option>
+                <option value="day trip">Day Trip</option>
+                <option value="nightlife">Nightlife</option>
+                <option value="private tour">Private Tour</option>
+              </select>
+
+              <select
+                name="select-destination"
+                id="select-destination"
+                required
+              >
+                <option value="">Destination:</option>
+                <option value="Mahakaleshwar">Mahakaleshwar</option>
+                <option value="Omkareshwar">Omkareshwar</option>
+                <option value="Indore">Indore</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Orcha">Orcha</option>
+                <option value="Narsingpur">Narsingpur</option>
+                <option value="Jabalpur">Jabalpur</option>
+              </select>
+
+              <select name="select-duration" id="select-duration" required>
+                <option value="">Duration:</option>
+                <option value="short">0-3 hours</option>
+                <option value="medium">3-5 hours</option>
+                <option value="long">5-7 hours</option>
+                <option value="full day">Full day</option>
+              </select>
+            </div>
+            <button class="btn btn--full" type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- ================= ACTIVITIES ================= -->
+      <section class="section-activities" id="activities">
+        <div class="container">
+          <span class="subheading center-text">Best Activities</span>
+          <h2 class="heading-secondary center-text">
+            Browse Featured Activities
+          </h2>
+
+          <div class="activities-container grid grid--4-cols">
+            <div class="activity">
+              <figure class="activity-img">
+                <img
+                  src="img/hero/hero-1.jpg"
+                  alt="Indore-Smar-City"
+                />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">₹17, 999</span>
+                  <span class="price-value">₹15, 999 </span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Indore City</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>4</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Indore, MP</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (34)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/hero/Mahakaleshwar.jpg" alt="Mahakaleshwar Temple, Ujjain" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">₹24, 999</span>
+                  <span class="price-value">₹21, 999 </span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Mahakaleshwar Temple</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>12</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Mahakaleshwar Temple, Ujjain</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-5</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.9/5</strong> rating (67)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/hero/hero-3.jpg" alt="Omkareshwar Temple, Khandwa" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">₹24, 999</span>
+                  <span class="price-value">₹19, 999 </span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Omkareshwar Temple, Khandwa</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>15</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Omkareshwar Temple, Khandwa</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-20</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.7/5</strong> rating (28)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="activity">
+              <figure class="activity-img">
+                <img src="img/hero/hero-4.jpg" alt="Orchha" />
+              </figure>
+
+              <div class="price-container">
+                <span class="price-text">Price:</span>
+                <div>
+                  <span class="price-old">₹15, 999</span>
+                  <span class="price-value">₹11, 999 </span>
+                </div>
+              </div>
+
+              <a href="#cta" class="activity-heading">Orchha</a>
+              <ul class="activity-attributes">
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="clock"></ion-icon>
+                  <span><strong>2</strong> hours</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="pin"></ion-icon>
+                  <span><strong>Orchha MP</strong></span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="people"></ion-icon>
+                  <span><strong>2-10</strong> people</span>
+                </li>
+                <li class="activity-attribute">
+                  <ion-icon class="activity-icon" name="star"></ion-icon>
+                  <span><strong>4.8/5</strong> rating (23)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LOCATIONS ================= -->
+      <section class="section-locations" id="locations">
+        <div class="container">
+          <span class="subheading">Locations</span>
+          <h2 class="heading-secondary heading-locations">
+            Wouldn't you like to be in the best locations in the world?
+          </h2>
+
+          <div class="swiper">
+            <div class="locations-content">
+              <div class="locations-container swiper-wrapper">
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-1.jpg" alt="Pachmadhi" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Pachmadhi</a>
+                      <span class="location-price">₹11, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 29 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-2.jpg" alt="Bhedaghat" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Bhedaghat</a>
+                      <span class="location-price">₹8, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 1 Mar 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-3.jpg" alt="Gwalior" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Gwalior</a>
+                      <span class="location-price">₹13, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 5 Feb 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-4.jpg" alt="Khajuraho" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Khajuraho</a>
+                      <span class="location-price">₹9, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 31 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-5.jpg" alt="Sanchi Stupa" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Sanchi Stupa</a>
+                      <span class="location-price">₹13, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 14 Apr 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/activities/at-6.jpg" alt="Kanha Netional Park" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Kanha Netional Park</a>
+                      <span class="location-price">₹12, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 6 May 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/hero/hero-1.jpg" alt="Indore Smart City" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Indore</a>
+                      <span class="location-price">₹11, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 15 Jan 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/hero/hero-2.jpg" alt="Mahakaleshwar" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Ujjain</a>
+                      <span class="location-price">₹11, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 1 Feb 2023</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location swiper-slide">
+                  <figure class="location-img">
+                    <img src="img/hero/hero-3.jpg" alt="Omkareshwar" />
+                  </figure>
+
+                  <div class="location-info">
+                    <div class="location-row">
+                      <a href="#cta" class="location-heading">Omkareshwar</a>
+                      <span class="location-price">₹11, 999</span>
+                    </div>
+
+                    <div class="location-row">
+                      <span class="location-date">From 31 Dec 2022</span>
+                      <span class="location-duration">Per Day</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev locations-btn-prev"></div>
+            <div class="swiper-button-next locations-btn-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CATEGORIES ================= -->
+      <section class="section-categories" id="categories">
+        <div class="container">
+          <span class="subheading center-text">Categories</span>
+          <h2 class="heading-secondary center-text">Browse By Category</h2>
+
+          <div class="categories-container">
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/attraction.svg"
+                  alt="attraction icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Attraction</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/caravan.svg"
+                  alt="caravan icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Caravan</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/diving.svg"
+                  alt="diving icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Diving</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/cruise.svg"
+                  alt="cruise icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Cruise</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/city-travel.svg"
+                  alt="city travel icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">City Travel</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/food-drinks.svg"
+                  alt="food and drinks icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Food & Drinks</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/beach.svg"
+                  alt="beach icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Beach</h3>
+            </div>
+
+            <div class="category">
+              <figure class="category-icon-container">
+                <img
+                  src="img/category-icons/camping.svg"
+                  alt="camping icon"
+                  class="category-icon"
+                />
+              </figure>
+              <h3 class="category-heading">Camping</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BLOGS ================= -->
+      <section class="section-blogs" id="blogs">
+        <div class="container">
+          <span class="subheading">Latest News</span>
+          <h2 class="heading-secondary heading-blogs">
+            If you are interested in travel business, check out our gallery
+          </h2>
+
+          <div class="blogs-container">
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/hero/hero-3.jpg" alt="Venice" />
+
+                <div class="date">
+                  <span class="date-day">20</span>
+                  <span class="date-month-year">Jan/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--attractions">Attractions</span>
+                </div>
+                <a class="blog-heading">
+                 Omkareshwar Temple Khandwa
+                </a>
+              </div>
+            </div>
+
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/hero/hero-4.jpg" alt="Mahakaleshwar" />
+
+                <div class="date">
+                  <span class="date-day">15</span>
+                  <span class="date-month-year">Jan/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--experience">experiences</span>
+                </div>
+                <a class="blog-heading">
+                  Mahakaleshwar Temple
+                </a>
+              </div>
+            </div>
+
+            <div class="blog">
+              <figure class="blog-img">
+                <img src="img/hero/hero-1.jpg" alt="Indore-Smar-City" />
+
+                <div class="date">
+                  <span class="date-day">7</span>
+                  <span class="date-month-year">Feb/23</span>
+                </div>
+              </figure>
+
+              <div class="blog-content">
+                <div class="blog-tags">
+                  <span class="tag tag--travel">Travel</span>
+                  <span class="tag tag--places">places</span>
+                </div>
+                <a class="blog-heading">
+                  Indore Cleanest City in India
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONIALS ================= -->
+      <section class="section-testimonials" id="testimonials">
+        <div class="container">
+          <span class="subheading center-text">Testimonials</span>
+          <h2 class="heading-secondary center-text">
+            What our clients say about us
+          </h2>
+
+          <div class="testimonials-slider">
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-1.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Ivelin Manev</h4>
+                <span class="testimonial-location">Indore, MP</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Excellent service!</h3>
+                <blockquote class="testimonial-text">
+                  I recently used KevatJi  Travel Agency for a trip to Europe and
+                  I was blown away by the level of service and attention to the
+                  detail I received. From the moment I started planning my trip,
+                  the team at KevatJi  was incredibly helpful and responsive,
+                  answering all of my questions and offering personalized
+                  recommendations based on my interests.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-2.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Milena Jordanova</h4>
+                <span class="testimonial-location">Noid, UP</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Trustworthy agency!</h3>
+                <blockquote class="testimonial-text">
+                  I have been using KevatJi  for all of my travel needs for the
+                  past few years and I have always been extremely satisfied with
+                  the level of service I receive. The team at KevatJi  is
+                  reliable, efficient, and always goes above and beyond to
+                  ensure that my travels are smooth and stress-free. I know that
+                  I can rely on them for all of my travel needs.
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="testimonials-slide">
+              <address class="testimonial-author">
+                <img
+                  src="img/testimonials/user-3.jpg"
+                  class="testimonial-img"
+                  alt="testimonial photo"
+                />
+                <h4 class="testimonial-name">Michael Ross</h4>
+                <span class="testimonial-location">Betul, UK</span>
+              </address>
+
+              <div class="testimonial-content">
+                <h3 class="testimonial-heading">Amazing experience!</h3>
+                <blockquote class="testimonial-text">
+                  I recently traveled to Istanbul with KevatJi  and had an
+                  absolutely amazing experience. From the moment I booked my
+                  trip, the team at KevatJi  was incredibly helpful and attentive.
+                  Once I arrived in Istanbul, everything was taken care of for
+                  me - the accommodation was top-notch and the activities and
+                  tours were all well-organized and enjoyable.
+                </blockquote>
+              </div>
+            </div>
+            <div class="testimonial-btns">
+              <button class="testimonial-slider__btn testimonial__btn--left">
+                <span>&larr;</span>
+              </button>
+              <button class="testimonial-slider__btn testimonial__btn--right">
+                <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TEAM ================= -->
+      <section class="section-team" id="team">
+        <div class="container">
+          <span class="subheading">Our team</span>
+          <h2 class="heading-secondary heading-team">
+            Meet Our Professional Team To Guide You Best
+          </h2>
+
+          <div class="team-container">
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-1.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Petar Ivanov</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">38 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-2.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Luke Castro</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">67 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-3.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Emre Ali</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">27 Activities</span>
+              </div>
+            </div>
+
+            <div class="team">
+              <figure class="team-img">
+                <img src="img/team/agent-4.jpg" alt="team member" />
+              </figure>
+              <div class="team-content">
+                <h3 class="team-name">Christine Beck</h3>
+                <span class="team-position">Tour Guide</span>
+                <span class="team-activities">56 Activities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CALL-TO-ACTION FORM ================= -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <span class="subheading center-text">Contact us</span>
+          <h2 class="heading-secondary center-text">
+            Ready to book your next trip?
+          </h2>
+
+          <div class="cta">
+            <div>
+              <h3 class="heading-tertiary cta-heading">
+                Get an appointment at our office!
+              </h3>
+              <p class="cta-text">
+                Book your next adventure with our expert team in our office. We
+                are open 7 days a week from 09 AM to 09 PM. You can also contact
+                us by phone or email.
+              </p>
+            </div>
+
+            <form action="#" class="form cta-form" method="post">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Ivan Ivanov"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  pattern="[0]{1}[8-9]{1}[0-9]{8}"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input id="date" type="date" required />
+              </div>
+              <div>
+                <label for="time">Time</label>
+                <input id="time" type="time" min="10:00" max="18:00" required />
+              </div>
+              <div>
+                <label for="select-people">How many people?</label>
+                <select id="select-people" required>
+                  <option value="">Please, choose one option:</option>
+                  <option value="small">1-3</option>
+                  <option value="medium">4-6</option>
+                  <option value="large">7-10</option>
+                  <option value="extra">10+</option>
+                </select>
+              </div>
+              <div class="cta-message">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Your message"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--full" type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="footer-container container">
+        <div class="footer-col-1">
+          <a href="#"
+            ><img
+              class="footer-logo"
+              src="img/sumit.png"
+              alt="logo"
+          /></a>
+          <div class="social-media-logos">
+            <a href="#">
+              <ion-icon
+                class="social-media-logo"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-facebook"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-twitter"
+              ></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon
+                class="social-media-logo"
+                name="logo-youtube"
+              ></ion-icon
+            ></a>
+          </div>
+
+          <ul class="footer-imgs">
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/activities/at-1.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/activities/at-2.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#cta">
+                <img
+                  class="footer-img"
+                  src="img/activities/at-3.jpg"
+                  alt="footer image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">About us</a></li>
+            <li><a class="footer-link" href="#locations">Destinations</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Tours</a></li>
+            <li><a class="footer-link" href="#cta">Contact</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+            <li><a class="footer-link" href="#blogs">Blog</a></li>
+          </ul>
+
+          <h4 class="footer-heading">Popular Search</h4>
+          <div class="search-items">
+            <a class="search-item" href="#">Tours</a>
+            <a class="search-item" href="#">Hotels</a>
+            <a class="search-item" href="#">Car Rentals</a>
+            <a class="search-item" href="#">Cruises</a>
+            <a class="search-item" href="#">Vacations</a>
+          </div>
+        </div>
+
+        <div class="footer-col-3">
+          <h4 class="footer-heading">Blog and News</h4>
+          <div class="footer-blogs">
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-1.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading">
+                How to travel safely around the world
+              </a>
+              <span class="footer-blog-date">May 20, 2023</span>
+            </div>
+
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-2.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading">
+                How to become the best tour guide
+              </a>
+              <span class="footer-blog-date">Feb 17, 2023</span>
+            </div>
+
+            <div class="footer-blog">
+              <img src="img/footer/blog-footer-3.jpg" alt="footer blog" />
+              <a href="#blogs" class="footer-blog-heading"
+                >Wandering around Venice</a
+              >
+              <span class="footer-blog-date">Mar 24, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col-4">
+          <h4 class="footer-heading">Contact Us</h4>
+          <div class="footer-contacts">
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="pin"></ion-icon>
+              </figure>
+
+              <span class="footer-detail">GopalGanj, Sagar [M.P.]</span>
+              <span class="footer-detail-text">Meet us in the office</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <a href="tel:9111987258"><ion-icon class="footer-icon" name="call"></ion-icon>
+              </figure>
+              <span class="footer-detail">+91 911-198-7258</a></span>
+              <span class="footer-detail-text">Make a call</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+               <a style="color:white !important;" href="mailto:info@kevatji.com"><ion-icon class="footer-icon" name="mail"></ion-icon>
+              </figure>
+              info@KevatJi .com</a
+              >
+              <span class="footer-detail-text">Send us an email</span>
+            </div>
+
+            <div class="footer-contact-item">
+              <figure class="footer-figure">
+                <ion-icon class="footer-icon" name="clock"></ion-icon>
+              </figure>
+              <span class="footer-detail">09 AM - 09 PM (Sun - Sun)</span>
+              <span class="footer-detail-text">Opening hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footer-text" style="text-align: center; padding-bottom:25px;">
+        Copyright ©
+        <span class="year"></span> All Maintained By
+        <a href="https://instagram.com/olaska_js"><span style="color: red; animation: blink 1.5s infinite;">&#10084;
+          <style>
+            @keyframes blink {
+                0% { opacity: 1; }
+                50% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+            </style></span><b style="color:white !important;">JS</b></a>.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Style+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/desvg@1.0.2/desvg.min.js"></script>
+  </body>
+</html>
